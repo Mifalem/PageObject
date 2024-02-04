@@ -44,12 +44,13 @@ public class DataHelper {
     public static CardInfo getCardInfoSecond() {
         return new CardInfo("5559 0000 0000 0002", "0f3f5c2a-249e-4c3d-8287-09f7a039391d");
     }
-    public static int generateValidAmount( int balance) {
+
+    public static int generateValidAmount(int balance) {
         return new Random().nextInt(Math.abs(balance)) + 1;
 
     }
 
-    public static int generateInvalidAmount (int balance) {
+    public static int generateInvalidAmount(int balance) {
         return Math.abs(balance) + new Random().nextInt(10000);
 
     }
